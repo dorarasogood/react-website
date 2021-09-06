@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { MainNavbar } from "./components/MainNavbar/MainNavbar";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // 使用名称className而不是class作为属性名,是因为"class" 在JavaScript中是个保留字.
+    <div className="myColor">
+      123
+      <MainNavbar />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
+      123<br />
     </div>
   );
 }

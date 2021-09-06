@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//雖然使用react bootstrap，但是bootstrap的css要另外引入
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './i18n';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
