@@ -7,4 +7,8 @@ import App from './App';
 //   expect(linkElement).toBeInTheDocument();
 // });
 
+test('renders learn react link', () => {
+  expect(1).toBe(1);
+});
+
 

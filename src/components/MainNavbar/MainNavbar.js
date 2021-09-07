@@ -5,8 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useTranslation } from 'react-i18next';
 
 function MainNavbar() {
-  const { t, i18n } = useTranslation();
-  // i18n.changeLanguage('en');
+  const { t } = useTranslation();
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -27,4 +26,4 @@ function MainNavbar() {
   );
 }
 
-export { MainNavbar }
+export { MainNavbar };
