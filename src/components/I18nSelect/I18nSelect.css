@@ -1,4 +1,15 @@
+
+[web-theme = "dark"] {
+  --select-background-color: #006b29;
+  --color: #fffb00;
+}
+
+[web-theme = "light"] {
+  --select-background-color: #2600ff;
+  --color: #fffb00;
+}
+
 #i18nSelector {
-  background-color: #006b29;
-  color: rgb(235, 252, 0);
+  background-color: var(--select-background-color);
+  color: var(--color);
 }
