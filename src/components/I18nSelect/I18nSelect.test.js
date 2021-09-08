@@ -9,9 +9,16 @@ test('test I18nSelect with selecting tw', () => {
     />
   );
   const element = screen.getByTestId('selectedOption');
-  console.log("AAA000 = ", element);
-  for(let a in element["children"]){
-    console.log("AAA001 = ", element["children"][a]);
-  }
-  // console.log("AAA001 = ", element["children"]);
+  expect(element.innerHTML).toBe("正體中文 (繁體)");
+});
+
+test('test I18nSelect with selecting jp', () => {
+  render(
+    <I18nSelect
+      selected = "jp"
+      onChange = {()=>{}}
+    />
+  );
+  const element = screen.getByTestId('selectedOption');
+  expect(element.innerHTML).toBe("日本語");
 });
