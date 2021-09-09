@@ -64,7 +64,8 @@ class App extends React.Component {
   render(){
     return (
       // 使用名称className而不是class作为属性名,是因为"class" 在JavaScript中是个保留字.
-      <div className="myColor" web-theme="dark">
+      <div className="myColor" 
+          web-theme={ this.state.darkMode ? "dark" : "light" }>
         123
 
         {/*(Hex)&#x???;*/}

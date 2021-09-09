@@ -29,6 +29,7 @@ function ThemeToggle(props) {
           unchecked: <UncheckedIcon />
         }}
         aria-label="Theme toggle"
+        data-testid="themeToggle"
       />
     </div>
   );
