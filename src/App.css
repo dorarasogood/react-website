@@ -14,3 +14,36 @@
 .myColor {
   background-color: var(--background-color);
 }
+
+.settingLocation {
+  display:flex;
+}
+
+.logoLocation {
+  /* display: inline-block; */
+  flex: 1;
+}
+
+.up {
+  display:flex;
+}
+
+.down {
+  margin-top: 1%;
+}
+
+.themeLocation {
+  /* float: right; */
+  /* display: inline-block; */
+}
+
+.i18nLocation {
+  /* float: right; */
+  /* display: inline-block; */
+}
+
+.shopping {
+  background-color: #1162e6;
+  margin-left: 5%;
+  margin-right: 5%;
+}

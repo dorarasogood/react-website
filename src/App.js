@@ -3,8 +3,10 @@ import { I18nSelect } from './components/I18nSelect/I18nSelect';
 import { MainNavbar } from './components/MainNavbar/MainNavbar';
 import { Cookie } from './toolkit/Cookie/Cookie';
 import React from 'react';
-import i18n from './i18n';// import i18n from 'i18next';這個也可以，但不太懂
+import i18n from './i18n';
 import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
+import {HashRouter,Link,Route,Switch} from "react-router-dom";
+import Button from 'react-bootstrap/Button'
 
 function i18nInit() {
   let cookie = new Cookie();
@@ -66,24 +68,67 @@ class App extends React.Component {
       // 使用名称className而不是class作为属性名,是因为"class" 在JavaScript中是个保留字.
       <div className="myColor" 
           web-theme={ this.state.darkMode ? "dark" : "light" }>
-        123
 
-        {/*(Hex)&#x???;*/}
-        {/*(Dec)&#???;*/}
-        &#x2600;
-        ☀️
-        &#x1F319;
-        &#x1F31E;
+        <div className="settingLocation">
+          <div className="logoLocation">
+            pic
+          </div>
+
+          <div>
+            <div className="up">
+              <div className="i18nLocation">
+                <ThemeToggle 
+                  darkMode = {this.state.darkMode}
+                  onChange = {this.themeToggleChange}
+                />
+              </div>
+              <div className="themeLocation">
+                <I18nSelect
+                  selected = {this.state.i18n}
+                  onChange = {this.i18nChange}
+                />
+              </div>
+            </div>
+            <div align="right" className="down">
+              <Button variant="success">Success</Button>{' '}
+              <Button variant="outline-primary">Primary</Button>{' '}
+            </div>
+          </div>
+          
+        </div>
+
+        
+        
+        
         
         <MainNavbar />
-        <I18nSelect
-          selected = {this.state.i18n}
-          onChange = {this.i18nChange}
-        />
-        <ThemeToggle 
-          darkMode = {this.state.darkMode}
-          onChange = {this.themeToggleChange}
-        />
+
+        
+        {/* <HashRouter>
+            <ul>
+              <li><Link to="/">first</Link></li>
+              <li><Link to="/second">second</Link></li>
+            </ul>
+            <Switch>
+              <Route exact path="/" render={(props) => (
+                <I18nSelect
+                  selected = {this.state.i18n}
+                  onChange = {this.i18nChange}
+                />
+              )} />
+              <Route exact path="/second">
+                <ThemeToggle 
+                  darkMode = {this.state.darkMode}
+                  onChange = {this.themeToggleChange}
+                />
+              </Route>
+            </Switch>
+        </HashRouter> */}
+
+        <div className="shopping">123</div>
+        
+
+
         123<br />
         123<br />
         123<br />
