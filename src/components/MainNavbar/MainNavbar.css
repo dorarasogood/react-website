@@ -1,0 +1,24 @@
+[web-theme = "dark"] {
+  --dropdown-menu-background-color: #3d3d3d;
+  --navItem-hover-background-color: #535353;
+  --navItem-color: #e6e6e6;
+}
+
+[web-theme = "light"] {
+  --dropdown-menu-background-color: #ffffff;
+  --navItem-hover-background-color: #dfdfdf;
+  --navItem-color: #000000;
+}
+
+.dropdown-menu {
+  background-color: var(--dropdown-menu-background-color) !important;
+}
+
+#navItem {
+  background-color: var(--dropdown-menu-background-color);
+  color: var(--navItem-color);
+}
+
+#navItem:hover {
+  background-color: var(--navItem-hover-background-color);
+}

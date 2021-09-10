@@ -1,0 +1,13 @@
+#productsButton {
+  background-color: #d82929;
+  border-color: #d82929;
+}
+
+#productsButton:hover {
+  background-color: #8d1c1c;
+  border-color: #daff06;
+}
+
+#productsButton:focus {
+  box-shadow: 0 0 0 0.25rem rgba(253, 13, 221, 0.5);
+}

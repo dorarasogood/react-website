@@ -7,6 +7,8 @@ import i18n from './i18n';
 import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import {HashRouter,Link,Route,Switch} from "react-router-dom";
 import { TopBanner } from './components/TopBanner/TopBanner';
+import { ProductsPage } from './pages/ProductsPage/ProductsPage';
+
 
 function i18nInit() {
   let cookie = new Cookie();
@@ -65,7 +67,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="myColor" 
+      <div className="webColor" 
           web-theme={ this.state.darkMode ? "dark" : "light" }>
         <HashRouter>
           <TopBanner 
@@ -85,28 +87,37 @@ class App extends React.Component {
               <Link to="/">home</Link>
             </Route>
             <Route exact path="/">
-              <MainNavbar />
+              <MainNavbar 
+                darkMode = {this.state.darkMode}
+              />
               HomeHomeHomeHomeHomeHomeHome
             </Route>
             <Route exact path="/news">
-              <MainNavbar />
+              <MainNavbar 
+                darkMode = {this.state.darkMode}
+              />
               newsnewsnewsnewsnewsnews
             </Route>
             <Route exact path="/products/fruit">
-              <MainNavbar />
-              fruitfruitfruitfruitfruit
+              <MainNavbar 
+                darkMode = {this.state.darkMode}
+              />
+              <ProductsPage />
             </Route>
             <Route exact path="/products/flower">
-              <MainNavbar />
+              <MainNavbar 
+                darkMode = {this.state.darkMode}
+              />
               flowerflowerflowerflowerflowerflower
             </Route>
             <Route exact path="/posts">
-              <MainNavbar />
+              <MainNavbar 
+                darkMode = {this.state.darkMode}
+              />
               PostsPostsPostsPostsPostsPosts
             </Route>
           </Switch>
         </HashRouter>
-        <div className="shopping">123</div>
       </div>
     );
   }
