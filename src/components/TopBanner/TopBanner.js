@@ -13,13 +13,13 @@ function TopBanner(props) {
 
       <div>
         <div className="up">
-          <div className="i18nLocation">
+          <div className="themeLocation">
             <ThemeToggle 
               darkMode = {props.darkMode}
               onChange = {props.themeToggleChange}
             />
           </div>
-          <div className="themeLocation">
+          <div className="i18nLocation">
             <I18nSelect
               selected = {props.i18n}
               onChange = {props.i18nChange}

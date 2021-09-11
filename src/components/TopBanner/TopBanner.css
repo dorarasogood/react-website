@@ -19,6 +19,12 @@
 .themeLocation {
   /* float: right; */
   /* display: inline-block; */
+  border-right-width: 0.5em;
+  border-right-style: solid;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-width: 0.5em;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0);
 }
 
 .i18nLocation {
