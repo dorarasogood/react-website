@@ -5,6 +5,10 @@ function ProductsPage() {
   return (
     <div className="productsPageBorder">
       <Products />
+      <Products />
+      <Products />
+      <Products />
+      <Products />
     </div>
   );
 }

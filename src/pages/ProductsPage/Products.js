@@ -1,30 +1,23 @@
 import './Products.css';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import appleImg from './apple.jpg';
 
 function Products() {
   return (
-    // <button id="productsButton">
-    //   <div>
-    //     456<br/>
-    //     456<br/>
-    //     456<br/>
-    //   </div>
-    // </button>
-    <div>
-    <Button>
-      <div>
-        123<br/>
-        123<br/>
-        123<br/>
-      </div>
-    </Button>
-    <Button id="productsButton">
-      <div>
-        456<br/>
-        456<br/>
-        456<br/>
-      </div>
-    </Button>
+    <div className="productsBox">
+      <Button  id="productsButton">
+        <div>
+          {/* <div className="productsImgBox"> */}
+            <img src={appleImg} alt="apple" className="productsImg"/>
+          {/* </div> */}
+          <div>123</div>
+          ABCDEFGHIJKLMNOPQRSTU<br/>
+          width: 21 char<br/>
+          height: 6 row<br/>
+          456<br/>
+          456<br/>
+        </div>
+      </Button>
     </div>
   );
 }

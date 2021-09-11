@@ -1,13 +1,44 @@
+[web-theme = "dark"] {
+  --productsButton-background-color: #804000;
+  --productsButton-border-color: #804000;
+  --productsButton-hover-background-color: #663300;
+  --productsButton-hover-border-color: #cccc00;
+  --productsButton-focus-box-shadow: rgba(128, 64, 0, 0.5);
+  --productsBox-color: #dddddd;
+}
+
+[web-theme = "light"] {
+  --productsButton-background-color: #ff9f40;
+  --productsButton-border-color: #804000;
+  --productsButton-hover-background-color: #663300;
+  --productsButton-hover-border-color: #cccc00;
+  --productsButton-focus-box-shadow: rgba(128, 64, 0, 0.5);
+  --productsBox-color: #000000;
+}
+
+
 #productsButton {
-  background-color: #d82929;
-  border-color: #d82929;
+  width: 95%;
+  height: 95%;
+  background-color: var(--productsButton-background-color);
+  border-color: var(--productsButton-border-color);
 }
 
 #productsButton:hover {
-  background-color: #8d1c1c;
-  border-color: #daff06;
+  background-color: var(--productsButton-hover-background-color);
+  border-color: var(--productsButton-hover-border-color);
 }
 
 #productsButton:focus {
-  box-shadow: 0 0 0 0.25rem rgba(253, 13, 221, 0.5);
+  box-shadow: 0 0 0 0.25rem var(--productsButton-focus-box-shadow);
+}
+
+.productsBox {
+  width: 16em;
+  height: 20em;
+  color: var(--productsBox-color);
+}
+
+.productsImg {
+  width: 100%;
 }

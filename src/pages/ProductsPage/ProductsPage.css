@@ -1,9 +1,21 @@
+[web-theme = "dark"] {
+  --productsPageBorder-background-color: #63882c;
+}
+
+[web-theme = "light"] {
+  --productsPageBorder-background-color: #e0e0e0;
+}
+
 .productsPageBorder {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 16em);
+
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 1%;
   border-radius: 1em;
-  background: #73AD21;
-  padding: 1em;
+  background-color: var(--productsPageBorder-background-color);
+  padding: 0.3em;
 }
