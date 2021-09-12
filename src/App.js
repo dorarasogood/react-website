@@ -9,7 +9,6 @@ import {HashRouter,Link,Route,Switch} from "react-router-dom";
 import { TopBanner } from './components/TopBanner/TopBanner';
 import { ProductsPage } from './pages/ProductsPage/ProductsPage';
 
-
 function i18nInit() {
   let cookie = new Cookie();
   let language = cookie.getCookie("i18n");
@@ -30,9 +29,15 @@ function themeInit() {
   return false;
 }
 
+async function fetchData() {
+  let response = await fetch("http://localhost:4200/");
+  console.log("AAA000 = ", await response.json());
+}
+
 class App extends React.Component {
   constructor(props){
     super(props);
+    fetchData();
     let language = i18nInit();
     let darkModeBoolean = themeInit();
     this.state = {
