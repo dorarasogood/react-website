@@ -26,10 +26,10 @@ function TopBanner(props) {
             />
           </div>
         </div>
-        <div align="right" className="down">
+        {/* <div align="right" className="down">
           <Link to="/signin"><Button variant="success">Sign in</Button>{' '}</Link>
           <Link to="/signup"><Button variant="outline-primary">Sign up</Button>{' '}</Link>
-        </div>
+        </div> */}
       </div>
       
     </div>

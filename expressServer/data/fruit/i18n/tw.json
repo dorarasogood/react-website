@@ -1,0 +1,38 @@
+{
+  "currency": "TWD",
+  "apple": {
+    "imgUrl": "",
+    "name": "蘋果",
+    "price": "1"
+  },
+  "banana": {
+    "imgUrl": "",
+    "name": "香蕉",
+    "price": "1.5"
+  },
+  "cherry": {
+    "imgUrl": "",
+    "name": "櫻桃",
+    "price": "1.2"
+  },
+  "cranberry": {
+    "imgUrl": "",
+    "name": "蔓越莓",
+    "price": "1.6"
+  },
+  "peach": {
+    "imgUrl": "",
+    "name": "桃子",
+    "price": "2"
+  },
+  "raspberry": {
+    "imgUrl": "",
+    "name": "覆盆子",
+    "price": "3"
+  },
+  "strawberry": {
+    "imgUrl": "",
+    "name": "草莓",
+    "price": "2.5"
+  }
+}

@@ -15,7 +15,6 @@ class DataService {
           reject("fail");
       });
     }else{//fake backend
-      console.log("AAA000 fake backend");
       let dataJson = null;
       dataJson = getFakeProducts(productType, i18n);
       return new Promise((resolve, reject)=>{

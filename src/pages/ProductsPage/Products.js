@@ -6,7 +6,7 @@ function Products(props) {
     <div className="productsBox">
       <Button  id="productsButton">
         <div className="buttonInnerBox">
-            <img src={props.imgSrc} alt={props.name} className="productsImg"/>
+          <img src={props.imgSrc} alt={props.name} className="productsImg"/>
           <div className="productsName">{props.name}</div>
         </div>
       </Button>
