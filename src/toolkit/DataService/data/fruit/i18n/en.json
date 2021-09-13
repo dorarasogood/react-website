@@ -1,0 +1,13 @@
+{
+  "currency": "USDTWDJPY",
+  "apple": {
+    "imgUrl": "",
+    "name": "apple",
+    "price": "1"
+  },
+  "banana": {
+    "imgUrl": "",
+    "name": "banana",
+    "price": "1.5"
+  }
+}

@@ -1,10 +1,8 @@
 import './App.css';
-import { I18nSelect } from './components/I18nSelect/I18nSelect';
 import { MainNavbar } from './components/MainNavbar/MainNavbar';
 import { Cookie } from './toolkit/Cookie/Cookie';
 import React from 'react';
 import i18n from './i18n';
-import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import {HashRouter,Link,Route,Switch} from "react-router-dom";
 import { TopBanner } from './components/TopBanner/TopBanner';
 import { ProductsPage } from './pages/ProductsPage/ProductsPage';
@@ -29,15 +27,9 @@ function themeInit() {
   return false;
 }
 
-async function fetchData() {
-  let response = await fetch("http://localhost:4200/");
-  console.log("AAA000 = ", await response.json());
-}
-
 class App extends React.Component {
   constructor(props){
     super(props);
-    fetchData();
     let language = i18nInit();
     let darkModeBoolean = themeInit();
     this.state = {
@@ -107,7 +99,10 @@ class App extends React.Component {
               <MainNavbar 
                 darkMode = {this.state.darkMode}
               />
-              <ProductsPage />
+              <ProductsPage 
+                i18n = {this.state.i18n}
+                product = "fruit"
+              />
             </Route>
             <Route exact path="/products/flower">
               <MainNavbar 

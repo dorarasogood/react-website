@@ -1,16 +1,14 @@
 const express = require('express');
 var cors = require('cors');
+var { getProducts } = require('./data/processData')
 const app = express();
 const port = 4200;
 
 app.use(cors());
 
-app.get('/', (req, res)=>{
-  // res.send('Hello World!');
-  var str = 'abc = ' + port;
-  // res.json({msg: 'This is CORS-enabled for all origins!'})
-  res.json({msg: str});
-  console.log("AAA000");
+app.get('/:i18n/products/:productType', (req, res)=>{
+  var productsJson = getProducts(req.params.i18n, req.params.productType);
+  res.json(productsJson);
 });
 
 app.listen(port, ()=>{
