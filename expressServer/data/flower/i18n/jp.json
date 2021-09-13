@@ -1,0 +1,38 @@
+{
+  "currency": "TWD",
+  "carnation": {
+    "imgUrl": "",
+    "name": "カーネーション",
+    "price": "1200"
+  },
+  "lavender": {
+    "imgUrl": "",
+    "name": "ラベンダー",
+    "price": "1500"
+  },
+  "orchid": {
+    "imgUrl": "",
+    "name": "蘭",
+    "price": "1800"
+  },
+  "pansy": {
+    "imgUrl": "",
+    "name": "パンジー",
+    "price": "1750"
+  },
+  "rose": {
+    "imgUrl": "",
+    "name": "ローズ",
+    "price": "2800"
+  },
+  "sunflower": {
+    "imgUrl": "",
+    "name": "ひまわり",
+    "price": "880"
+  },
+  "tulip": {
+    "imgUrl": "",
+    "name": "チューリップ",
+    "price": "720"
+  }
+}

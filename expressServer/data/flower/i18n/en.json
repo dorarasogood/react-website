@@ -1,0 +1,38 @@
+{
+  "currency": "USD",
+  "carnation": {
+    "imgUrl": "",
+    "name": "carnation",
+    "price": "10"
+  },
+  "lavender": {
+    "imgUrl": "",
+    "name": "lavender",
+    "price": "15"
+  },
+  "orchid": {
+    "imgUrl": "",
+    "name": "orchid",
+    "price": "20"
+  },
+  "pansy": {
+    "imgUrl": "",
+    "name": "pansy",
+    "price": "12"
+  },
+  "rose": {
+    "imgUrl": "",
+    "name": "rose",
+    "price": "13"
+  },
+  "sunflower": {
+    "imgUrl": "",
+    "name": "sunflower",
+    "price": "8"
+  },
+  "tulip": {
+    "imgUrl": "",
+    "name": "tulip",
+    "price": "16"
+  }
+}

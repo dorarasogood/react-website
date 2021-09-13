@@ -21,7 +21,7 @@ function ProductsPage(props) {
       );
     });
     setProductsList(productsListArray);
-  });
+  }, [props.product, props.i18n]);//??
 
   return (
     <div className="productsPageBorder">

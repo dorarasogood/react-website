@@ -108,7 +108,10 @@ class App extends React.Component {
               <MainNavbar 
                 darkMode = {this.state.darkMode}
               />
-              flowerflowerflowerflowerflowerflower
+              <ProductsPage 
+                i18n = {this.state.i18n}
+                product = "flower"
+              />
             </Route>
             <Route exact path="/posts">
               <MainNavbar 

@@ -1,5 +1,5 @@
 {
-  "currency": "USDTWDJPY",
+  "currency": "USD",
   "apple": {
     "imgUrl": "",
     "name": "apple",
@@ -9,5 +9,30 @@
     "imgUrl": "",
     "name": "banana",
     "price": "1.5"
+  },
+  "cherry": {
+    "imgUrl": "",
+    "name": "cherry",
+    "price": "1.2"
+  },
+  "cranberry": {
+    "imgUrl": "",
+    "name": "cranberry",
+    "price": "1.6"
+  },
+  "peach": {
+    "imgUrl": "",
+    "name": "peach",
+    "price": "2"
+  },
+  "raspberry": {
+    "imgUrl": "",
+    "name": "raspberry",
+    "price": "3"
+  },
+  "strawberry": {
+    "imgUrl": "",
+    "name": "strawberry",
+    "price": "2.5"
   }
 }

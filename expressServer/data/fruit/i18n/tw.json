@@ -3,36 +3,36 @@
   "apple": {
     "imgUrl": "",
     "name": "蘋果",
-    "price": "1"
+    "price": "30"
   },
   "banana": {
     "imgUrl": "",
     "name": "香蕉",
-    "price": "1.5"
+    "price": "20"
   },
   "cherry": {
     "imgUrl": "",
     "name": "櫻桃",
-    "price": "1.2"
+    "price": "10"
   },
   "cranberry": {
     "imgUrl": "",
     "name": "蔓越莓",
-    "price": "1.6"
+    "price": "15"
   },
   "peach": {
     "imgUrl": "",
     "name": "桃子",
-    "price": "2"
+    "price": "50"
   },
   "raspberry": {
     "imgUrl": "",
     "name": "覆盆子",
-    "price": "3"
+    "price": "15"
   },
   "strawberry": {
     "imgUrl": "",
     "name": "草莓",
-    "price": "2.5"
+    "price": "30"
   }
 }

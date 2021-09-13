@@ -1,0 +1,38 @@
+{
+  "currency": "JPY",
+  "apple": {
+    "imgUrl": "",
+    "name": "リンゴ",
+    "price": "100"
+  },
+  "banana": {
+    "imgUrl": "",
+    "name": "バナナ",
+    "price": "400"
+  },
+  "cherry": {
+    "imgUrl": "",
+    "name": "チェリー",
+    "price": "300"
+  },
+  "cranberry": {
+    "imgUrl": "",
+    "name": "クランベリー",
+    "price": "500"
+  },
+  "peach": {
+    "imgUrl": "",
+    "name": "桃",
+    "price": "800"
+  },
+  "raspberry": {
+    "imgUrl": "",
+    "name": "ラズベリー",
+    "price": "550"
+  },
+  "strawberry": {
+    "imgUrl": "",
+    "name": "いちご",
+    "price": "950"
+  }
+}
