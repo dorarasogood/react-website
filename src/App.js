@@ -6,6 +6,7 @@ import i18n from './i18n';
 import {HashRouter,Link,Route,Switch} from "react-router-dom";
 import { TopBanner } from './components/TopBanner/TopBanner';
 import { ProductsPage } from './pages/ProductsPage/ProductsPage';
+import { HomePage } from './pages/HomePage/HomePage'
 
 function i18nInit() {
   let cookie = new Cookie();
@@ -64,7 +65,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="webColor" 
+      <div className="myWeb" 
           web-theme={ this.state.darkMode ? "dark" : "light" }>
         <HashRouter>
           <TopBanner 
@@ -87,7 +88,10 @@ class App extends React.Component {
               <MainNavbar 
                 darkMode = {this.state.darkMode}
               />
-              HomeHomeHomeHomeHomeHomeHome
+              <HomePage 
+                i18n = {this.state.i18n}
+                darkMode = {this.state.darkMode}
+              />
             </Route>
             <Route exact path="/news">
               <MainNavbar 

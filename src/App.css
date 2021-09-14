@@ -1,18 +1,17 @@
-.App {
-  text-align: center;
-}
-
 [web-theme = "dark"] {
-  --background-color: #414141;
+  --myWeb-background-color: #414141;
+  --myWeb-color: #e6e6e6;
 }
 
 [web-theme = "light"] {
-  --background-color: #b9b9b9;
+  --myWeb-background-color: #cfcfcf;
+  --myWeb-color: #000000;
 }
 
-.webColor {
-  background-color: var(--background-color);
+.myWeb {
+  background-color: var(--myWeb-background-color);
   min-height: 100vh;
+  color: var(--myWeb-color);
 }
 
 .shopping {
