@@ -1,5 +1,15 @@
 {
   "MainNavbar": {
     "news": "news"
+  },
+  "NewsPage": {
+    "news_001": {
+      "title": "title",
+      "content": "content"
+    },
+    "news_002": {
+      "title": "title",
+      "content": "content"
+    }
   }
 }

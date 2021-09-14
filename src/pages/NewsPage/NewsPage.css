@@ -1,3 +1,33 @@
+[web-theme = "dark"] {
+  --accordion-button-color: #e6e6e6;
+  --accordion-button-background-color: #486b13;
+
+  --accordion-button-not-color: #fff238;
+  --accordion-button-not-background-color: #486b13;
+  --accordion-button-not-box-shadow: rgba(0, 0, 0, 0.125);
+
+  --accordion-button-focus-border-color: #fff238;
+  --accordion-button-focus-box-shadow: rgba(237, 253, 13, 0.25);
+
+  --accordion-item-background-color: #486b13;
+  --accordion-item-border: rgba(255, 238, 0, 0.125);
+}
+
+[web-theme = "light"] {
+  --accordion-button-color: #212529;
+  --accordion-button-background-color: #fff;
+
+  --accordion-button-not-color: #0c63e4;
+  --accordion-button-not-background-color: #e7f1ff;
+  --accordion-button-not-box-shadow: rgba(0, 0, 0, 0.125);
+
+  --accordion-button-focus-border-color: #86b7fe;
+  --accordion-button-focus-box-shadow: rgba(13, 110, 253, 0.25);
+
+  --accordion-item-background-color: #fff;
+  --accordion-item-border: rgba(0, 0, 0, 0.125);
+}
+
 .accordion-button {
   position: relative;
   display: flex;
@@ -5,9 +35,9 @@
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: var(--accordion-button-color) !important;
   text-align: left;
-  background-color: #fff;
+  background-color: var(--accordion-button-background-color) !important;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -15,19 +45,27 @@
 }
 
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
-  background-color: #e7f1ff;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: var(--accordion-button-not-color) !important;
+  background-color: var(--accordion-button-not-background-color) !important;
+  box-shadow: inset 0 -1px 0 var(--accordion-button-not-box-shadow) !important;
 }
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: var(--accordion-button-focus-border-color) !important;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem var(--accordion-button-focus-box-shadow) !important;
 }
 
 .accordion-item {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: var(--accordion-item-background-color) !important;
+  border: 1px solid var(--accordion-item-border) !important;
+}
+
+
+.accordionBox {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
 }

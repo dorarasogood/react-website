@@ -21,7 +21,7 @@ function MainNavbar(props) {
               <NavDropdown.Item href="#products/fruit" id="navItem">Fruit</NavDropdown.Item>
               <NavDropdown.Item href="#products/flower" id="navItem">Flower</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#posts">Posts</Nav.Link>
+            {/* <Nav.Link href="#posts">Posts</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
