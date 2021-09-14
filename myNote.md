@@ -4,6 +4,8 @@
 3. webpack config。node_modules\react-scripts\config\webpack.config.js
 4. bootstrap css。node_modules\bootstrap\dist\css\bootstrap.css
 
+小型店家商品資訊網站
+
 ## others
 * (Hex)&#x???;
   (Dec)&#???;
@@ -18,6 +20,7 @@
 * <br>
 * <br>
 
+//---------------------------------------
 
 <HashRouter>
   <ul>
@@ -40,14 +43,14 @@
   </Switch>
 </HashRouter>
 
-
+//---------------------------------------
 
 
 使用名称className而不是class作为属性名,是因为"class" 在JavaScript中是个保留字.
       <div className="myColor" 
           web-theme={ this.state.darkMode ? "dark" : "light" }>
 
-
+//---------------------------------------
 
 有關按鈕css
 .btn-primary {
@@ -67,6 +70,7 @@
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 
+//---------------------------------------
 
 
 function toDataUrl(src, callback, outputFormat) {
@@ -95,3 +99,18 @@ function urlCallback(dataUrl) {
   console.log("AAA001 = ", dataUrl);
   document.getElementById("abc123456").src= dataUrl;
 }
+
+
+//---------------------------------------
+
+src\pages\ProductsPage\ProductsPage.js
+  Line 9:14:  Effect callbacks are synchronous to prevent race conditions. Put the async function inside:
+
+useEffect(() => {
+  async function fetchData() {
+    // You can await here
+    const response = await MyAPI.getData(someId);
+    // ...
+  }
+  fetchData();
+}, [someId]); // Or [] if effect doesn't need props or state

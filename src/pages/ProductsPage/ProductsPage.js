@@ -6,22 +6,25 @@ import { DataService } from '../../toolkit/DataService/DataService';
 function ProductsPage(props) {
   const [productsList, setProductsList] = useState([]);
 
-  useEffect( async function() {
-    let dataService = new DataService();
-    let dataJson = await dataService.getProducts(props.product, props.i18n);
-    let productsListArray = dataJson["productsList"].map((fruit)=>{
-      return(
-        <Products 
-          key = {fruit}
-          imgSrc = {dataJson[fruit]["imgUrl"]}
-          name = {dataJson[fruit]["name"]}
-          price = {dataJson[fruit]["price"]}
-          currency = {dataJson["currency"]}
-        />
-      );
-    });
-    setProductsList(productsListArray);
-  }, [props.product, props.i18n]);//??
+  useEffect(()=>{
+    async function fetchData() {
+      let dataService = new DataService();
+      let dataJson = await dataService.getProducts(props.product, props.i18n);
+      let productsListArray = dataJson["productsList"].map((fruit)=>{
+        return(
+          <Products 
+            key = {fruit}
+            imgSrc = {dataJson[fruit]["imgUrl"]}
+            name = {dataJson[fruit]["name"]}
+            price = {dataJson[fruit]["price"]}
+            currency = {dataJson["currency"]}
+          />
+        );
+      });
+      setProductsList(productsListArray);
+    }
+    fetchData();
+  }, [props.product, props.i18n]);
 
   return (
     <div className="productsPageBorder">
