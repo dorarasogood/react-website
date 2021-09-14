@@ -5,15 +5,17 @@
   --productsButton-hover-border-color: #cccc00;
   --productsButton-focus-box-shadow: rgba(128, 64, 0, 0.5);
   --productsBox-color: #dddddd;
+  --productsName-color: #e6e6e6;
 }
 
 [web-theme = "light"] {
-  --productsButton-background-color: #ff9f40;
-  --productsButton-border-color: #804000;
-  --productsButton-hover-background-color: #663300;
-  --productsButton-hover-border-color: #cccc00;
-  --productsButton-focus-box-shadow: rgba(128, 64, 0, 0.5);
+  --productsButton-background-color: #d9ffb3;
+  --productsButton-border-color: #d9ffb3;
+  --productsButton-hover-background-color: #b9db98;
+  --productsButton-hover-border-color: #ff00ff;
+  --productsButton-focus-box-shadow: rgba(185, 219, 152, 0.5);
   --productsBox-color: #000000;
+  --productsName-color: #000000;
 }
 
 
@@ -52,6 +54,7 @@
   text-align: left;
   font-size: 1.7em;
   margin-top: 0.3em;
+  color: var(--productsName-color);
 }
 
 .productsPrice {
