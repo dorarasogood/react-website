@@ -16,7 +16,7 @@ function MainNavbar(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-testid="testToggle"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#news">{t('navbar.news')}</Nav.Link>
+            <Nav.Link href="#news">{t('MainNavbar.news')}</Nav.Link>
             <NavDropdown title="商品" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#products/fruit" id="navItem">Fruit</NavDropdown.Item>
               <NavDropdown.Item href="#products/flower" id="navItem">Flower</NavDropdown.Item>

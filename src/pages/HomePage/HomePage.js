@@ -1,12 +1,17 @@
 import { ImageBanner } from '../../components/ImageBanner/ImageBanner';
 import './HomePage.css'
+import { useTranslation } from 'react-i18next';
 
 function HomePage(props) {
+  const { t } = useTranslation();
   return(
-    <div className="imageBannerBox">
-      <ImageBanner 
-        darkMode = {props.darkMode}
-      />
+    <div>
+      <h1 className="welcomeTitle">{t('MainNavbar.news')}</h1>
+      <div className="imageBannerBox">
+        <ImageBanner 
+          darkMode = {props.darkMode}
+        />
+      </div>
     </div>
   );
 }

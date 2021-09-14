@@ -14,13 +14,6 @@ const imageListObj = {
   "cherry": cherry
 }
 
-const imageListArray = [
-  "lavender",
-  "orchid",
-  "banana",
-  "cherry"
-]
-
 function ImageBanner(props) {
   const [index, setIndex] = useState(0);
 
@@ -28,8 +21,9 @@ function ImageBanner(props) {
     setIndex(selectedIndex);
   };
 
-  let imageList = imageListArray.map((image)=>{
-    return(
+  let imageList = [];
+  for(let image in imageListObj){
+    let imageItem = (
       <Carousel.Item interval={2000} key={image}>
         <img
           className="d-block w-100"
@@ -38,7 +32,8 @@ function ImageBanner(props) {
         />
       </Carousel.Item>
     );
-  });
+    imageList.push(imageItem);
+  }
 
   return (
     <Carousel 
