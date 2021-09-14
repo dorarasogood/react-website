@@ -1,5 +1,24 @@
 {
+  "HomePage": {
+    "welcomeTitle": "歡迎來到我的網站，請到處看看或玩玩吧!"
+  },
   "MainNavbar": {
-    "news": "最新消息"
+    "news": "最新消息",
+    "home": "首頁",
+    "products": "商品",
+    "productsType": {
+      "fruit": "水果",
+      "flower": "花卉"
+    }
+  },
+  "NewsPage": {
+    "news_001": {
+      "title": "蘋果現在正在特價中!",
+      "content": "來自日本富士山新鮮又美味的蘋果，現在只要9折!"
+    },
+    "news_002": {
+      "title": "蘭花促銷活動",
+      "content": "現在正在進行漂亮藍色蘭花的促銷活動，買一送一!"
+    }
   }
 }

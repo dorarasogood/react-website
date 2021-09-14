@@ -12,14 +12,14 @@ function MainNavbar(props) {
             bg={props.darkMode ? "dark" : "light"} 
             variant={props.darkMode ? "dark" : "light"} >
       <Container>
-        <Navbar.Brand href="#">首頁</Navbar.Brand>
+        <Navbar.Brand href="#">{t('MainNavbar.home')}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-testid="testToggle"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#news">{t('MainNavbar.news')}</Nav.Link>
-            <NavDropdown title="商品" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#products/fruit" id="navItem">Fruit</NavDropdown.Item>
-              <NavDropdown.Item href="#products/flower" id="navItem">Flower</NavDropdown.Item>
+            <NavDropdown title={t('MainNavbar.products')} id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#products/fruit" id="navItem">{t('MainNavbar.productsType.fruit')}</NavDropdown.Item>
+              <NavDropdown.Item href="#products/flower" id="navItem">{t('MainNavbar.productsType.flower')}</NavDropdown.Item>
             </NavDropdown>
             {/* <Nav.Link href="#posts">Posts</Nav.Link> */}
           </Nav>

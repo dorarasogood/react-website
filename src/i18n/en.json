@@ -1,15 +1,24 @@
 {
+  "HomePage": {
+    "welcomeTitle": "Welcome to my website. Feel free to look around and have fun!"
+  },
   "MainNavbar": {
-    "news": "news"
+    "news": "News",
+    "home": "Home",
+    "products": "Products",
+    "productsType": {
+      "fruit": "Fruit",
+      "flower": "Flower"
+    }
   },
   "NewsPage": {
     "news_001": {
-      "title": "title",
-      "content": "content"
+      "title": "The apples are on sale!",
+      "content": "The fresh and delicious apples are coming from the Mount Fuji. There is 10 percent discount on the apples now!"
     },
     "news_002": {
-      "title": "title",
-      "content": "content"
+      "title": "The sale event for the orchid",
+      "content": "There is a sale event for the beautiful blue orchid. Buy one get one free!"
     }
   }
 }

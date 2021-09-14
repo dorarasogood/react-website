@@ -6,7 +6,7 @@ function HomePage(props) {
   const { t } = useTranslation();
   return(
     <div>
-      <h1 className="welcomeTitle">{t('MainNavbar.news')}</h1>
+      <h1 className="welcomeTitle">{t('HomePage.welcomeTitle')}</h1>
       <div className="imageBannerBox">
         <ImageBanner 
           darkMode = {props.darkMode}

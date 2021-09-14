@@ -8,7 +8,7 @@ function TopBanner(props) {
   return(
     <div className="settingLocation">
       <div className="logoLocation">
-        pic
+        {/* pic */}
       </div>
 
       <div>

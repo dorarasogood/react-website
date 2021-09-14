@@ -1,17 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './NewsPage.css';
 import { useTranslation } from 'react-i18next';
-
-const newsObj = {
-  "news_001": {
-    "title": "NewsPage.news_001.title",
-    "content": "NewsPage.news_001.content"
-  },
-  "news_002": {
-    "title": "NewsPage.news_002.title",
-    "content": "NewsPage.news_002.content"
-  }
-}
+import newsObj from './news.json';
 
 function NewsPage() {
   const { t } = useTranslation();
