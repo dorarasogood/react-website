@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/react-website/static/css/main.57a7c682.chunk.css",
+    "main.js": "/react-website/static/js/main.f4afd92a.chunk.js",
+    "main.js.map": "/react-website/static/js/main.f4afd92a.chunk.js.map",
+    "runtime-main.js": "/react-website/static/js/runtime-main.206c20b8.js",
+    "runtime-main.js.map": "/react-website/static/js/runtime-main.206c20b8.js.map",
+    "static/css/2.818011ed.chunk.css": "/react-website/static/css/2.818011ed.chunk.css",
+    "static/js/2.44e86da5.chunk.js": "/react-website/static/js/2.44e86da5.chunk.js",
+    "static/js/2.44e86da5.chunk.js.map": "/react-website/static/js/2.44e86da5.chunk.js.map",
+    "static/js/3.011d87d3.chunk.js": "/react-website/static/js/3.011d87d3.chunk.js",
+    "static/js/3.011d87d3.chunk.js.map": "/react-website/static/js/3.011d87d3.chunk.js.map",
+    "index.html": "/react-website/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/react-website/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.57a7c682.chunk.css.map": "/react-website/static/css/main.57a7c682.chunk.css.map",
+    "static/js/2.44e86da5.chunk.js.LICENSE.txt": "/react-website/static/js/2.44e86da5.chunk.js.LICENSE.txt",
+    "static/media/apple.02dbbad9.jpg": "/react-website/static/media/apple.02dbbad9.jpg",
+    "static/media/banana.d6e80300.jpg": "/react-website/static/media/banana.d6e80300.jpg",
+    "static/media/carnation.5bda8b2f.jpg": "/react-website/static/media/carnation.5bda8b2f.jpg",
+    "static/media/cherry.27b65f07.jpg": "/react-website/static/media/cherry.27b65f07.jpg",
+    "static/media/cranberry.fca3b744.jpg": "/react-website/static/media/cranberry.fca3b744.jpg",
+    "static/media/lavender.cb2a6651.jpg": "/react-website/static/media/lavender.cb2a6651.jpg",
+    "static/media/orchid.c473ef5b.jpg": "/react-website/static/media/orchid.c473ef5b.jpg",
+    "static/media/pansy.e7107c50.jpg": "/react-website/static/media/pansy.e7107c50.jpg",
+    "static/media/peach.590c1a30.jpg": "/react-website/static/media/peach.590c1a30.jpg",
+    "static/media/raspberry.37e496fe.jpg": "/react-website/static/media/raspberry.37e496fe.jpg",
+    "static/media/rose.d1dc7a2b.jpg": "/react-website/static/media/rose.d1dc7a2b.jpg",
+    "static/media/strawberry.a3e67a77.jpg": "/react-website/static/media/strawberry.a3e67a77.jpg",
+    "static/media/sunflower.aff7f9dc.jpg": "/react-website/static/media/sunflower.aff7f9dc.jpg",
+    "static/media/tulip.7adc0d10.jpg": "/react-website/static/media/tulip.7adc0d10.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.206c20b8.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.44e86da5.chunk.js",
+    "static/css/main.57a7c682.chunk.css",
+    "static/js/main.f4afd92a.chunk.js"
+  ]
+}
