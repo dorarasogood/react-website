@@ -27,22 +27,22 @@
 - - - -
 
 `亮色模式(Light Mode)`
-![Light Mode](/readme_images/light_mode.png)
+![Light Mode](/readme_images/light_mode.PNG)
 
 `深色模式(Dark Mode)`
-![Dark Mode](/readme_images/dark_mode.png)
+![Dark Mode](/readme_images/dark_mode.PNG)
 
 `多國語系(i18n)`
-![i18n](/readme_images/i18n.png)
+![i18n](/readme_images/i18n.PNG)
 
 `響應式(RWD)`
-![rwd](/readme_images/mobile.png)
+![rwd](/readme_images/mobile.PNG)
 
 `商品頁面`
-![fruit](/readme_images/fruit.png)
+![fruit](/readme_images/fruit.PNG)
 
 `單元測試(Unit Test)`
-![Unit Test](/readme_images/test_result.png)
+![Unit Test](/readme_images/test_result.PNG)
 
 ## 補充
 
