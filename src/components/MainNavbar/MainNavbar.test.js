@@ -3,10 +3,10 @@ import { MainNavbar } from './MainNavbar';
 
 test('test navbar', () => {
   render(<MainNavbar />);
-  const element = screen.getByTestId('testToggle');
+  const navToggle = screen.getByTestId('navToggle');
   act(() => {
-    element.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    navToggle.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
-  const linkElement = screen.getByText(/navbar.news/i);
+  const linkElement = screen.getByText(/MainNavbar.news/i);
   expect(linkElement).toBeInTheDocument();
 });

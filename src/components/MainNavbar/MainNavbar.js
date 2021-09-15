@@ -13,7 +13,7 @@ function MainNavbar(props) {
             variant={props.darkMode ? "dark" : "light"} >
       <Container>
         <Navbar.Brand href="#">{t('MainNavbar.home')}</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" data-testid="testToggle"/>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" data-testid="navToggle"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#news">{t('MainNavbar.news')}</Nav.Link>

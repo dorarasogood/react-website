@@ -1,14 +1,26 @@
 import { render, screen, act } from '@testing-library/react';
 import App from './App';
+import {Router} from 'react-router-dom';
+import {createMemoryHistory} from 'history';
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
-test('renders learn react link', () => {
-  expect(1).toBe(1);
+test('test App first show HomePage', () => {
+  const history = createMemoryHistory()
+  history.push('/')
+  render(
+    <Router history={history}>
+      <App />
+    </Router>,
+  )
+  expect(screen.getByText(/歡迎/i)).toBeInTheDocument();
 });
 
-
+test('test App route to NewsPage', () => {
+  const history = createMemoryHistory()
+  history.push('/news')
+  render(
+    <Router history={history}>
+      <App />
+    </Router>,
+  )
+  expect(screen.getByText(/特價中/i)).toBeInTheDocument();
+});

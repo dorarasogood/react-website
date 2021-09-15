@@ -68,7 +68,7 @@ class App extends React.Component {
     return (
       <div className="myWeb" 
           web-theme={ this.state.darkMode ? "dark" : "light" }>
-        <HashRouter>
+        {/* <HashRouter> */}
           <TopBanner 
             darkMode = {this.state.darkMode}
             themeToggleChange = {this.themeToggleChange}
@@ -125,7 +125,7 @@ class App extends React.Component {
               PostsPostsPostsPostsPostsPosts
             </Route>
           </Switch>
-        </HashRouter>
+        {/* </HashRouter> */}
       </div>
     );
   }

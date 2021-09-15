@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {HashRouter} from "react-router-dom";
 
 //雖然使用react bootstrap，但是bootstrap的css要另外引入
-//但但是，這個css會影響body的設定
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './bootstrap.css'//還沒更動過
 import './i18n';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
